@@ -1,0 +1,23 @@
+.header{
+	color: white;
+	text-align: left;
+}
+.title{
+	color: green;
+	text-align: left;
+}
+
+.gif{
+	width: 200px;
+}
+
+.photo{
+	width: 400px;
+}
+
+
+.words {
+	color: white;
+	padding-left: 100px;
+	max-width: 920px;
+}
