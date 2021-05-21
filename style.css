@@ -3,8 +3,9 @@
 	text-align: left;
 }
 .title{
-	color: green;
+	color: red;
 	text-align: left;
+	font-family: "Apple Chancery", Times, serif;
 }
 
 .gif{
@@ -15,9 +16,35 @@
 	width: 400px;
 }
 
+.history{
+	font-family: "Apple Chancery", Times, serif;
+	padding-left: 200px;
+}
 
 .words {
 	color: white;
 	padding-left: 100px;
+/*	max-width: 920px;*/
+}
+
+.preface {
 	max-width: 920px;
+}
+
+.flex-first {
+	display: flex;
+	width: 100%;
+    max-width: 920px;
+	flex-wrap: wrap;
+}
+.image {
+	flex-basis: 40%;
+	flex-grow: 1;
+}
+.text {
+	padding-left: 20px;
+	flex-grow: 2;
+	flex-basis: 50%;
+	min-width: 300px;
+	float: left;
 }

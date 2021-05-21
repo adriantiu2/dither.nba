@@ -147,6 +147,7 @@ function handle(img){
 	// playerSeason = 2018;
 	// console.log(playerStats);
 	// console.log(playerId);
+	if (playerStats2.data[0]){
 	fill(0, 0, 0);
 	rect(0, 0, 400, 600);
 	s = (playerStats.data[0].pts)+(1.2*(playerStats.data[0].reb))+(1.5*(playerStats.data[0].ast))+(3*(playerStats.data[0].stl))+(3*(playerStats.data[0].blk))-(playerStats.data[0].turnover);
@@ -170,12 +171,22 @@ function handle(img){
 	text(Math.round( s * 100 + Number.EPSILON ) / 100, 160, 350);
 	console.log(playerData2.last_name);
 	textSize(12);
+	text('2018', 160, 313);
 	text(playerData2.first_name + ' ' + playerData2.last_name, 0, 12);
+	}
+	else {
+		fill(0, 0, 0);
+		rect(0, 0, 400, 600);
+		textSize(12);
+		fill(255, 255, 255);
+		text('player does not exist for 2018', 180, 313);
+	}
 }
 
 function handle2(img2){
 	// console.log(playerStats);
 	// console.log(playerId);
+	if (playerStats2.data[0]){
 	fill(0, 0, 0);
 	rect(400, 0, 400, 600);
 	s2 = (playerStats2.data[0].pts)+(1.2*(playerStats2.data[0].reb))+(1.5*(playerStats2.data[0].ast))+(3*(playerStats2.data[0].stl))+(3*(playerStats2.data[0].blk))-(playerStats2.data[0].turnover);
@@ -193,14 +204,24 @@ function handle2(img2){
   		values = `${key}: ${value}`;
   		text(values, 400, 300 + i2*13);
 	}
-	textSize(30);
+	text('2019', 560, 313);
+	textSize(30);s
 	text(Math.round( s2 * 100 + Number.EPSILON ) / 100, 560, 350);
 	// textSize(12);
 	// text(playerData2.first_name + ' ' + playerData2.last_name, 560, 312);
+	}
+	else {
+		fill(0, 0, 0);
+		rect(400, 0, 400, 600);
+		textSize(12);
+		fill(255, 255, 255);
+		text('player does not exist for 2019', 580, 313);
+	}
 }
 
 
 function handle3(img3){
+	if (playerStats3.data[0]){
 	fill(0, 0, 0);
 	rect(800, 0, 400, 600);
 	s3 = (playerStats3.data[0].pts)+(1.2*(playerStats3.data[0].reb))+(1.5*(playerStats3.data[0].ast))+(3*(playerStats3.data[0].stl))+(3*(playerStats3.data[0].blk))-(playerStats3.data[0].turnover);
@@ -221,9 +242,18 @@ function handle3(img3){
 	textSize(30);
 	text(Math.round( s3 * 100 + Number.EPSILON ) / 100, 960, 350);
 	textSize(12);
+	text('2020', 960, 313);
 	// if (playerData2){
 	// text(playerData2.first_name + ' ' + playerData2.last_name, 960, 312);
 	// }
+	}
+	else {
+		fill(0, 0, 0);
+		rect(800, 0, 400, 600);
+		fill(255, 255, 255);
+		textSize(12);
+		text('player does not exist for 2020', 980, 313);
+	}
 }
 
 
